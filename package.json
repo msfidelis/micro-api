@@ -1,0 +1,28 @@
+{
+  "name": "micro-api",
+  "version": "1.0.0",
+  "description": "Personal boilerplate to bootstrap simple applications and microservices",
+  "main": "index.js",
+  "dependencies": {
+    "hapi": "^17.3.1",
+    "hapi-router": "^4.0.0"
+  },
+  "devDependencies": {
+    "nodemon": "^1.17.3"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/msfidelis/micro-api.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/msfidelis/micro-api/issues"
+  },
+  "homepage": "https://github.com/msfidelis/micro-api#readme"
+}
