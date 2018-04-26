@@ -4,8 +4,11 @@
   "description": "Personal boilerplate to bootstrap simple applications and microservices",
   "main": "index.js",
   "dependencies": {
+    "boom": "^7.2.0",
     "hapi": "^17.3.1",
-    "hapi-router": "^4.0.0"
+    "hapi-router": "^4.0.0",
+    "joi": "^13.2.0",
+    "raj-tools": "^1.0.3"
   },
   "devDependencies": {
     "nodemon": "^1.17.3"
