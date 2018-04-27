@@ -1,6 +1,6 @@
 'use strict';
 
-const system  = require('../../../helpers/system');
+const system  = require('../../../libs/system');
 
 module.exports = [
     {

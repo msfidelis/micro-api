@@ -2,7 +2,7 @@
 
 const raj   = require('raj-tools');
 
-const uuid  = require('../../../helpers/uuid');
+const uuid  = require('../../../libs/uuid');
 
 
 let fakeDatabase = [
