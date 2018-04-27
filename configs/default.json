@@ -1,0 +1,22 @@
+{
+    "server": {
+        "PORT" : 8000,
+        "JWT_SECRET": "phu3aeghieGaoxood2aedeiNg1aey2"
+    },
+    "databases": {
+        "mongo": {
+            "HOST" : "",
+            "PORT" : "",
+            "DATABASE": "",
+            "USER": "",
+            "PASSWORD": ""
+        },
+        "postgresql": {
+            "HOST": "",
+            "PORT": "",
+            "DATABASE": "example_app",
+            "USER": "",
+            "PASSWORD": ""
+        }
+    }
+}
