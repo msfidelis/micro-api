@@ -12,10 +12,12 @@
     "raj-tools": "^1.0.3"
   },
   "devDependencies": {
+    "chai": "^4.1.2",
+    "mocha": "^5.1.1",
     "nodemon": "^1.17.3"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "unit-test": "mocha --recursive",
     "dev": "nodemon index.js"
   },
   "repository": {
@@ -23,8 +25,8 @@
     "url": "git+https://github.com/msfidelis/micro-api.git"
   },
   "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "author": "Matheus Fidelis",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/msfidelis/micro-api/issues"
   },

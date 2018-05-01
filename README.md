@@ -12,3 +12,9 @@ npm run dev
 ```bash
 npm start
 ```
+
+## Running Tests
+
+```bash
+npm run unit-test
+```
