@@ -3,29 +3,14 @@
 const Hapi = require('hapi');
 const Boom = require('boom');
 
-const PORT = process.env.PORT || 3000;
+const serverConfigs = require('./configs/server');
+const serverPlugins = require('./configs/plugins');
 
-const server = Hapi.server({
-    port: PORT,
-    host: '0.0.0.0',
-    routes: {
-        validate: {
-            failAction: async (request, h, err) => Boom.badRequest(err.message)
-        }
-    }
-});
+const server = Hapi.server(serverConfigs);
 
 const init = async () => {
-
-    await server.register({
-        plugin: require('hapi-router'),
-        options: {
-            routes: 'modules/*/routes/*.js'
-        }
-    });
-
+    await server.register(serverPlugins);
     await server.start();
-
     console.log(`Server running at: ${server.info.uri}`);
 };
 
