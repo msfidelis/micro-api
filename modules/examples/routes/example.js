@@ -13,7 +13,7 @@ module.exports = [
     {
         method: "GET",
         path: "/hello/{name}",
-        handler: (req, res) => `Hello, ${req.params.name}`
+        handler: (req, res) => `Hello, ${req.params.name}!!`
     },
     {
         method: "GET", 
