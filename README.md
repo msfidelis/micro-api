@@ -1,4 +1,4 @@
-# micro-api
+# Micro API Boilerplate
 Personal boilerplate to bootstrap simple applications and microservices
 
 ## Development Environment 
