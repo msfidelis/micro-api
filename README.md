@@ -5,7 +5,7 @@ Personal boilerplate to bootstrap simple applications and microservices
 
 ```bash
 .
-├── configs # Server configs
+├── configs             # Server configs
 │   ├── default.json	# Environment variables file
 │   ├── plugins.js		# HapiJS Plugins Config
 │   └── server.js		# HapiJS Server Config
