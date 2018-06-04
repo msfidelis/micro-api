@@ -7,7 +7,7 @@ module.exports = [
         method: "GET",
         path: "/",
         handler: (req, res) => {
-            return res.response({foo: "bar"}).code(200)
+            return res.response({message: "the cake is a lie"}).code(200)
         }
     },
     {
