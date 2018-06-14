@@ -18,7 +18,8 @@
   },
   "scripts": {
     "unit-test": "mocha --recursive",
-    "dev": "nodemon index.js"
+    "dev": "nodemon index.js",
+	"start": "node index.js"
   },
   "repository": {
     "type": "git",
