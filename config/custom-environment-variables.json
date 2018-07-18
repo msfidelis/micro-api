@@ -1,0 +1,22 @@
+{
+    "server": {
+        "PORT" : "PORT",
+        "JWT_SECRET": "JWT_SECRET"
+    },
+    "databases": {
+        "mongo": {
+            "HOST" : "MONGO_HOST",
+            "PORT" : "MONGO_PORT",
+            "DATABASE": "MONGO_SCHEMA",
+            "USER": "MONGO_USER",
+            "PASSWORD": "MONGO_PASSWORD"
+        },
+        "postgresql": {
+            "HOST": "DB_HOST",
+            "PORT": "DB_PORT",
+            "DATABASE": "DB_NAME",
+            "USER": "DB_USER",
+            "PASSWORD": "DB_PASS"
+        }
+    }
+}

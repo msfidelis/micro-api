@@ -3,8 +3,8 @@
 const Hapi = require('hapi');
 const Boom = require('boom');
 
-const serverConfigs = require('./configs/server');
-const serverPlugins = require('./configs/plugins');
+const serverConfigs = require('./config/server');
+const serverPlugins = require('./config/plugins');
 
 const server = Hapi.server(serverConfigs);
 

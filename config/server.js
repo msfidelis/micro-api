@@ -1,6 +1,8 @@
 'use strict';
 
-const PORT = process.env.PORT || 3000;
+const config = require('config');
+
+const PORT = config.get('server.PORT') || 3000;
 
 module.exports = {
     port: PORT,
