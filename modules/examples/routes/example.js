@@ -1,6 +1,7 @@
 'use strict';
 
 const system  = require('../../../libs/system');
+const fibonacci = require('../../../libs/fibonacci');
 
 module.exports = [
     {
@@ -21,6 +22,15 @@ module.exports = [
         handler: (req, res) => {
             const data = system.infos();
             return res.response(data).code(200);
+        }
+    },
+    {
+        method: "GET",
+        path: "/fibonacci/{n}",
+        handler: (req, res) => {
+            const n = parseInt(req.params.n);
+            const block = fibonacci(n)
+            return res.response(block).code(200);
         }
     }
 ]
