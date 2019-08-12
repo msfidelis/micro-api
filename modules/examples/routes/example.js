@@ -29,7 +29,7 @@ module.exports = [
         path: "/fibonacci/{n}",
         handler: async (req, res) => {
             const n = await parseInt(req.params.n);
-            const block = await fibonacci(n)
+            const block = await fibonacci(n);
             return res.response(block).code(200);
         }
     }
