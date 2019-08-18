@@ -1,0 +1,15 @@
+version: "3"
+services:
+
+  micro-api:
+    build: .
+    command: "npm run dev"
+    volumes:
+      - "./:/app"
+    ports:
+      - "8000:8000"
+    networks:
+      - developer
+
+networks:
+  developer:
