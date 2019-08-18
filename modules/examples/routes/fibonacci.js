@@ -6,14 +6,21 @@ module.exports = [
     {
         method: "GET",
         path: "/fibonacci/{n}",
-        handler: (req, res) => {
-            return new Promise(async (resolve, reject) => {
-                const n = parseInt(req.params.n);
-                const block = fibonacci(n);
-                resolve(block);
+        handler: async (req, res) => {
+            return new Promise((resolve, reject) => {
+
+                try {
+                    const n = parseInt(req.params.n);
+                    const result = fibonacci(n);
+                    resolve(result);
+                } catch (error) {
+                    reject(error);
+                }
+
             })
-            .then(number => res.response(number).code(200))
-            .catch(err => res.response(err).code(500))
+            .then(result => res.response(result).code(200))
+            .catch(error => res.response({ error }).code(500))
+
         }
     }
 ]

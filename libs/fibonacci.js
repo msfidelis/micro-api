@@ -1,13 +1,16 @@
 'use strict';
 
 function fibonacci(n) {
-    if (n < 2) {
-        return 1;
-    } else {
-        const block = fibonacci(n-2) + fibonacci(n-1);
-        console.log(`fibonacci(${n}) => ${block}`);
-        return block;
+    let a = 1, b = 0, temp;
+
+    while (n >= 0){
+      temp = a;
+      a = a + b;
+      b = temp;
+      n--;
     }
+
+    return b;
 }
 
 module.exports = fibonacci;
