@@ -1,4 +1,4 @@
-<h1 align="center">Micro API Boilerplate</h1>
+<h1 align="center"> :zap: Micro API Boilerplate :zap: </h1>
 <p>
   <img src="https://img.shields.io/badge/version-0.0.1-blue.svg?cacheSeconds=2592000" />
   <a href="https://twitter.com/fidelissauro">
