@@ -1,5 +1,5 @@
 {
-    "version": 2,
+    "version": 3,
     "server": {
         "PORT" : 8000,
         "JWT_SECRET": "phu3aeghieGaoxood2aedeiNg1aey2"
