@@ -9,15 +9,21 @@ jobs:
   build:
     runs-on: ubuntu-18.04
     steps:
+    - uses: actions/checkout@v1
     - name: Import SSH Key
       env:
         SSH_KEY: ${{ secrets.SSH_KEY }}
         GIT_SSH_COMMAND: "ssh -o StrictHostKeyChecking=no"
+        SSH_AUTH_SOCK: /tmp/ssh_agent.sock
       run: |
+        mkdir -p ~/.ssh
+        ssh-keyscan github.com >> ~/.ssh/known_hosts
+        ssh-agent -a $SSH_AUTH_SOCK
         ssh-add - <<< "${SSH_KEY}"
 
     - name: Clone private repo - test
       env:
+        SSH_AUTH_SOCK: /tmp/ssh_agent.sock
         REPO: git@github.com:msfidelis/atlantis-pipeline.git
       run: |
         git clone $REPO
