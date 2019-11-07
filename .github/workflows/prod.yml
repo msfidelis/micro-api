@@ -14,7 +14,6 @@ jobs:
         SSH_KEY: ${{ secrets.SSH_KEY }}
         GIT_SSH_COMMAND: "ssh -o StrictHostKeyChecking=no"
       run: |
-        eval "$(ssh-agent -s)"
         ssh-add - <<< "${SSH_KEY}"
 
     - name: Clone private repo - test
