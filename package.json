@@ -5,7 +5,7 @@
   "main": "index.js",
   "dependencies": {
     "boom": "^7.2.0",
-    "config": "^1.30.0",
+    "config": "^3.3.8",
     "hapi": "^17.3.1",
     "hapi-router": "^4.0.0",
     "joi": "^13.2.0",
